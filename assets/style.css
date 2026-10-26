@@ -10,7 +10,7 @@ h3{font-size:19px;font-weight:700}.sub{color:var(--mut);max-width:680px;margin:0
 .nav{position:sticky;top:0;z-index:50;background:rgba(11,22,38,.82);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.06)}
 .nav-in{display:flex;align-items:center;gap:24px;height:64px}
 .brand{display:flex;align-items:center;gap:10px;color:var(--tx);text-decoration:none;font-weight:800}
-.logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--teal),#0e7490);display:grid;place-items:center;color:#04121c;font-size:14px;font-weight:800}
+.logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--teal),#0e7490);display:grid;place-items:center;color:#04121c;font-size:14px;font-weight:800}.logo svg{display:block}
 .links{display:flex;gap:22px;margin-left:auto}.links a{color:var(--mut);text-decoration:none;font-weight:600;font-size:15px}.links a:hover{color:var(--tx)}
 .lang{display:flex;background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:3px}
 .lang button{background:none;border:0;color:var(--mut);font:700 13px Manrope,sans-serif;padding:6px 11px;border-radius:999px;cursor:pointer}
@@ -19,7 +19,7 @@ h3{font-size:19px;font-weight:700}.sub{color:var(--mut);max-width:680px;margin:0
 .hero{padding:80px 0 90px;background:radial-gradient(900px 500px at 85% 10%,rgba(45,212,191,.14),transparent 60%),radial-gradient(700px 400px at 0% 100%,rgba(245,177,76,.07),transparent 60%)}
 .hero-in{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
 .who{display:flex;align-items:center;gap:14px;margin-bottom:26px}
-.avatar{width:72px;height:72px;border-radius:50%;object-fit:cover;border:2px solid var(--teal)}
+.mark{width:60px;height:60px;flex:none;border-radius:18px;display:grid;place-items:center;color:#04121c;background:radial-gradient(circle at 30% 25%,#8ff5e6,transparent 55%),linear-gradient(135deg,var(--teal),#0e7490 70%,#173a5e);box-shadow:0 10px 30px rgba(45,212,191,.25),inset 0 0 0 1px rgba(255,255,255,.18)}
 .name{font-weight:800;font-size:18px}.loc{color:var(--mut);font-size:14px}
 h1{font-size:clamp(34px,4.6vw,56px);font-weight:800;letter-spacing:-.03em}
 h1 em{font-style:normal;color:var(--teal)}
@@ -102,8 +102,8 @@ h1 em{font-style:normal;color:var(--teal)}
 .about{display:grid;grid-template-columns:1fr 1.1fr;gap:56px}.about>div>p{color:var(--mut);font-size:16.5px}
 .facts{display:grid;gap:16px}.fact{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px}
 .fact h4{margin:0 0 10px;font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--teal)}
-.fact p{margin:0 0 12px;font-size:15px}.fact p:last-child{margin:0}.fact a{font-size:14px;font-weight:600}
-.langs{display:flex;gap:8px;flex-wrap:wrap}.langs span{background:#1b3350;padding:5px 12px;border-radius:999px;font-size:14px;font-weight:600}
+.fact p{margin:0 0 12px;font-size:15px;color:var(--mut)}.fact p:last-child{margin:0}.fact a{font-size:14px;font-weight:600}
+.langs{display:flex;gap:8px;flex-wrap:wrap}.langs span{color:var(--tx);background:#1b3350;padding:5px 12px;border-radius:999px;font-size:14px;font-weight:600}
 /* form */
 .cform{max-width:760px;margin:0 auto 28px;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px;display:grid;gap:16px}
 .frow{display:grid;grid-template-columns:1fr 1fr;gap:16px}
