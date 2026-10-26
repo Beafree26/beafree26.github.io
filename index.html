@@ -248,5 +248,21 @@ window.CONFIG = {
 <footer class="foot"><div class="wrap">© <span id="yr"></span> <span data-i18n="brand"></span> · <span data-i18n="hero.loc"></span></div></footer>
 <div class="lightbox" id="lbx" hidden><button class="x" aria-label="Close">×</button><img alt=""><p></p></div>
 <script src="assets/app.js"></script>
+<script>
+/* Anonymous visit counter (no cookies, no personal data sent). Read: abacus.jasoncameron.dev/get/aistudija-z1qx3u1v/<key> */
+(function(){try{
+  var h=location.hostname; if(navigator.webdriver||h==="localhost"||h==="127.0.0.1"||h==="") return;
+  if(/bot|crawl|spider|preview|facebookexternalhit|headless/i.test(navigator.userAgent)) return;
+  var B="https://abacus.jasoncameron.dev/hit/aistudija-z1qx3u1v/";
+  function hit(k){try{fetch(B+k,{mode:"no-cors",keepalive:true,cache:"no-store",credentials:"omit"}).catch(function(){});}catch(e){}}
+  hit("views");
+  var s=null; try{s=sessionStorage.getItem("v")}catch(e){}
+  if(!s){ try{sessionStorage.setItem("v","1")}catch(e){}
+    hit("visits");
+    var l=document.documentElement.lang; if(/^(lv|ru|en)$/.test(l)) hit("lang-"+l);
+    if(/fbclid=|utm_source=(fb|facebook|ig|instagram)/i.test(location.search)||/facebook\.|instagram\.|fb\.me/i.test(document.referrer)) hit("from-fb");
+  }
+}catch(e){}})();
+</script>
 </body>
 </html>
