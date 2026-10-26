@@ -151,3 +151,11 @@ h1 em{font-style:normal;color:var(--teal)}
 @media (max-width:640px){.cform{border-radius:16px;padding:18px 14px;margin-left:0;margin-right:0}.cform button{width:100%}}
 @media (max-width:640px){.gal.vids{grid-template-columns:1fr 1fr;justify-content:stretch}.vhead{padding:12px 14px}.vhead p{font-size:14px}}
 @media (max-width:420px){.gal.vids{grid-template-columns:1fr}}
+
+/* latest AI tools badge */
+.newai{display:inline-flex;align-items:flex-start;gap:12px;margin:0 0 20px;padding:10px 18px 10px 14px;border-radius:16px;background:rgba(45,212,191,.07);border:1px solid rgba(45,212,191,.28);font-size:13.5px;line-height:1.45;color:var(--mut);max-width:560px}
+.newai b{display:block;color:var(--teal);font-weight:800;font-size:15px}.newai .sep{display:none}.newai .more{display:block}
+.newai .pulse{width:9px;height:9px;flex:none;margin-top:7px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 0 rgba(245,177,76,.6);animation:aipulse 2s infinite}
+@keyframes aipulse{0%{box-shadow:0 0 0 0 rgba(245,177,76,.55)}70%{box-shadow:0 0 0 8px rgba(245,177,76,0)}100%{box-shadow:0 0 0 0 rgba(245,177,76,0)}}
+@media (max-width:640px){.newai{font-size:13px;padding:9px 14px 9px 12px}.newai b{font-size:14px}}
+.newai .nw{white-space:nowrap}
