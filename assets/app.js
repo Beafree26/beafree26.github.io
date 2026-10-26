@@ -40,6 +40,8 @@ lv:{
 "ab.h":"Par mani","ab.p1":"Esmu AI inženieris no Rēzeknes. Veidoju mājas lapas, AI čatbotus un automatizāciju, kas ietaupa laiku un palīdz neizlaist klientus.",
 "ab.p2":"Kā arī ātri digitālie darbi ar AI palīdzību: teksti un rediģēšana, transkribēšana, dizains un maketi drukai, prezentācijas, saturs sociālajiem tīkliem, SEO. Strādāju attālināti visā Latvijā un ārzemēs.",
 "ab.edu":"Izglītība","ab.rta":"Rēzeknes Tehnoloģiju akadēmija","ab.cert":"Sertifikāti","ab.oct":"2024. g. oktobris","ab.verify":"Pārbaudīt sertifikātu ↗","ab.lang":"Valodas",
+"f.name":"Vārds","f.email":"E-pasts","f.phone":"Tālrunis (neobligāti)","f.msg":"Ziņojums","f.name.ph":"Jūsu vārds","f.email.ph":"jusu@epasts.lv","f.phone.ph":"+371 …","f.msg.ph":"Īsi aprakstiet uzdevumu — ko vajag izveidot vai automatizēt?",
+"f.send":"Nosūtīt","f.sending":"Sūta…","f.note":"Atbildēšu uz jūsu e-pastu, parasti tās pašas dienas laikā.","f.ok":"Paldies! Ziņojums nosūtīts — drīzumā atbildēšu uz jūsu e-pastu.","f.fail":"Neizdevās nosūtīt. Lūdzu, mēģiniet vēlreiz vai rakstiet man GetaPro.","f.req":"Obligāts lauks","f.bademail":"Ievadiet derīgu e-pasta adresi","f.fix":"Lūdzu, aizpildiet obligātos laukus.",
 "ct.h":"Uzrakstiet uzdevumu","ct.sub":"Atbildēšu ar cenu un termiņu. Pirmā konsultācija — bez maksas.",
 "c.phone":"Tālrunis","c.email":"E-pasts","c.tg":"Telegram","c.gp":"GetaPro profils","c.li":"LinkedIn","c.ph":"aizpildīt"
 },
@@ -83,6 +85,8 @@ ru:{
 "ab.h":"Обо мне","ab.p1":"Я AI-инженер из Резекне. Делаю сайты, ИИ-чат-ботов и автоматизацию, которые экономят время и помогают не терять клиентов.",
 "ab.p2":"А также быстрые digital-задачи с помощью ИИ: тексты и редактура, расшифровка, дизайн и макеты для печати, презентации, контент для соцсетей, SEO. Работаю удалённо по всей Латвии и за рубежом.",
 "ab.edu":"Образование","ab.rta":"Резекненская академия технологий (Rēzeknes Tehnoloģiju akadēmija)","ab.cert":"Сертификаты","ab.oct":"октябрь 2024","ab.verify":"Проверить сертификат ↗","ab.lang":"Языки",
+"f.name":"Имя","f.email":"E-mail","f.phone":"Телефон (необязательно)","f.msg":"Сообщение","f.name.ph":"Ваше имя","f.email.ph":"vash@email.lv","f.phone.ph":"+371 …","f.msg.ph":"Кратко опишите задачу — что нужно сделать или автоматизировать?",
+"f.send":"Отправить","f.sending":"Отправка…","f.note":"Отвечу на ваш e-mail, обычно в тот же день.","f.ok":"Спасибо! Сообщение отправлено — скоро отвечу на ваш e-mail.","f.fail":"Не удалось отправить. Попробуйте ещё раз или напишите мне на GetaPro.","f.req":"Обязательное поле","f.bademail":"Введите корректный e-mail","f.fix":"Пожалуйста, заполните обязательные поля.",
 "ct.h":"Напишите задачу","ct.sub":"Отвечу с ценой и сроком. Первая консультация — бесплатно.",
 "c.phone":"Телефон","c.email":"E-mail","c.tg":"Telegram","c.gp":"Профиль GetaPro","c.li":"LinkedIn","c.ph":"заполнить"
 },
@@ -126,6 +130,8 @@ en:{
 "ab.h":"About me","ab.p1":"I'm an AI engineer from Rēzekne, Latvia. I build websites, AI chatbots and automations that save time and help you never miss a customer.",
 "ab.p2":"I also do fast AI-assisted digital work: copywriting and editing, transcription, design and print layouts, presentations, social media content, SEO. I work remotely across Latvia and abroad.",
 "ab.edu":"Education","ab.rta":"Rēzekne Academy of Technologies (Rēzeknes Tehnoloģiju akadēmija)","ab.cert":"Certificates","ab.oct":"October 2024","ab.verify":"Verify certificate ↗","ab.lang":"Languages",
+"f.name":"Name","f.email":"E-mail","f.phone":"Phone (optional)","f.msg":"Message","f.name.ph":"Your name","f.email.ph":"you@email.com","f.phone.ph":"+371 …","f.msg.ph":"Briefly describe your task — what should be built or automated?",
+"f.send":"Send","f.sending":"Sending…","f.note":"I'll reply to your e-mail, usually the same day.","f.ok":"Thank you! Your message has been sent — I'll reply to your e-mail soon.","f.fail":"Sending failed. Please try again or message me on GetaPro.","f.req":"Required field","f.bademail":"Please enter a valid e-mail address","f.fix":"Please fill in the required fields.",
 "ct.h":"Tell me about your task","ct.sub":"I'll reply with a price and deadline. The first consultation is free.",
 "c.phone":"Phone","c.email":"E-mail","c.tg":"Telegram","c.gp":"GetaPro profile","c.li":"LinkedIn","c.ph":"to fill in"
 }};
@@ -151,6 +157,9 @@ function set(l){
   if(!T[l]) l="lv"; lang=l; var t=T[l],u=U[l];
   document.documentElement.lang=l;
   document.querySelectorAll("[data-i18n]").forEach(function(e){var k=e.getAttribute("data-i18n"); if(t[k]!=null) e.innerHTML=t[k];});
+  document.querySelectorAll("[data-i18n-ph]").forEach(function(e){e.placeholder=t[e.getAttribute("data-i18n-ph")]||"";});
+  document.querySelectorAll(".cform .err").forEach(function(e){e.textContent=t[e.dataset.k]||"";});
+  var fs=document.getElementById("fstatus"); if(fs&&!fs.hidden&&fs.dataset.k) fs.textContent=t[fs.dataset.k];
   document.querySelectorAll("[data-p]").forEach(function(e){e.textContent=u.from+" "+e.getAttribute("data-p")+" €"+(e.dataset.u?" "+u[e.dataset.u]:"");});
   document.querySelectorAll(".lang button").forEach(function(b){b.classList.toggle("on",b.dataset.lang===l);});
   document.title="Sergejs Filatovs — "+t["hero.title"].replace(/<[^>]+>/g,"");
@@ -162,6 +171,35 @@ document.querySelectorAll(".lang button").forEach(function(b){b.addEventListener
 var init=(location.hash.match(/^#(lv|ru|en)$/)||[])[1]; if(!init){try{init=localStorage.getItem("lang")}catch(e){}}
 set(init||"lv");
 document.getElementById("yr").textContent=new Date().getFullYear();
+// contact form (FormSubmit AJAX)
+(function(){
+  var f=document.getElementById("form"); if(!f) return;
+  var btn=document.getElementById("fsend"),st=document.getElementById("fstatus");
+  f.querySelectorAll("label").forEach(function(l){var i=l.querySelector("[required]");if(i)l.querySelector("span").classList.add("req");});
+  f.querySelectorAll("label > i").forEach(function(i){i.remove();});
+  function status(k,cls){st.hidden=false;st.className="fstatus "+cls;st.dataset.k=k;st.textContent=T[lang][k];}
+  function mark(inp,k){var l=inp.parentNode,e=l.querySelector(".err");
+    if(k){inp.classList.add("bad");inp.setAttribute("aria-invalid","true");if(!e){e=document.createElement("span");e.className="err";l.appendChild(e);}e.dataset.k=k;e.textContent=T[lang][k];}
+    else{inp.classList.remove("bad");inp.removeAttribute("aria-invalid");if(e)e.remove();}}
+  function check(inp){var v=inp.value.trim(),k=null;
+    if(inp.required&&!v)k="f.req";else if(inp.type==="email"&&v&&!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v))k="f.bademail";
+    mark(inp,k);return !k;}
+  f.querySelectorAll("input:not(.hp),textarea").forEach(function(i){i.addEventListener("blur",function(){if(i.value||i.classList.contains("bad"))check(i);});i.addEventListener("input",function(){if(i.classList.contains("bad"))check(i);});});
+  f.addEventListener("submit",function(ev){
+    ev.preventDefault(); if(btn.disabled) return;
+    var ok=true,first=null;
+    f.querySelectorAll("input:not(.hp),textarea").forEach(function(i){if(!check(i)){ok=false;first=first||i;}});
+    if(!ok){status("f.fix","no");first.focus();return;}
+    var E=f.elements,d={name:E.name.value.trim(),email:E.email.value.trim(),phone:E.phone.value.trim(),message:E.message.value.trim(),
+      _subject:"Jauns pieprasījums no beafree26.github.io",_template:"table",_captcha:"false",_honey:E._honey.value};
+    btn.disabled=true;btn.setAttribute("aria-busy","true");btn.innerHTML='<span class="spin"></span><span>'+T[lang]["f.sending"]+'</span>';st.hidden=true;
+    fetch((window.CONFIG||{}).formEndpoint,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(d)})
+      .then(function(r){return r.json().catch(function(){return {};}).then(function(j){if(!r.ok||String(j.success)==="false")throw new Error(j.message||r.status);return j;});})
+      .then(function(){status("f.ok","ok");f.reset();})
+      .catch(function(){status("f.fail","no");})
+      .then(function(){btn.disabled=false;btn.removeAttribute("aria-busy");btn.innerHTML='<span data-i18n="f.send">'+T[lang]["f.send"]+'</span>';});
+  });
+})();
 // lightbox
 var lb=document.getElementById("lbx"),li=lb.querySelector("img"),lp=lb.querySelector("p");
 document.querySelectorAll("a.lb").forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();li.src=a.getAttribute("href");lp.textContent=T[lang][a.dataset.cap]||"";lb.hidden=false;});});

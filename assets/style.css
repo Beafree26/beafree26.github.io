@@ -93,10 +93,34 @@ h1 em{font-style:normal;color:var(--teal)}
 .fact h4{margin:0 0 10px;font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--teal)}
 .fact p{margin:0 0 12px;font-size:15px}.fact p:last-child{margin:0}.fact a{font-size:14px;font-weight:600}
 .langs{display:flex;gap:8px;flex-wrap:wrap}.langs span{background:#1b3350;padding:5px 12px;border-radius:999px;font-size:14px;font-weight:600}
+/* form */
+.cform{max-width:760px;margin:0 auto 28px;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px;display:grid;gap:16px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cform label{display:flex;flex-direction:column;gap:7px;font-size:14px;font-weight:600;color:var(--mut)}
+.cform label>i{display:none}.cform label span+i{display:none}
+.cform label span::after{content:""}
+.cform input,.cform textarea{font:500 15.5px Manrope,system-ui,sans-serif;color:var(--tx);background:#0d1d30;border:1px solid var(--line);border-radius:12px;padding:13px 14px;outline:none;transition:border-color .2s,box-shadow .2s;width:100%}
+.cform textarea{resize:vertical;min-height:130px}
+.cform input::placeholder,.cform textarea::placeholder{color:#5f7690}
+.cform input:focus,.cform textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(45,212,191,.15)}
+.cform .bad{border-color:#f87171!important;box-shadow:0 0 0 3px rgba(248,113,113,.12)}
+.cform .err{color:#fca5a5;font-size:12.5px;font-weight:600}
+.cform .req::after{content:" *";color:var(--acc)}
+.hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;opacity:0}
+.fact-row{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.fact-row .btn{border:0;cursor:pointer;font:700 16px Manrope,sans-serif}
+.fact-row .btn[disabled]{opacity:.65;cursor:progress;transform:none;box-shadow:none}
+.fact-row .btn .spin{width:16px;height:16px;border:2px solid rgba(27,18,5,.3);border-top-color:#1b1205;border-radius:50%;animation:sp .8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.fnote{margin:0;color:var(--mut);font-size:13px;flex:1;min-width:200px}
+.fstatus{border-radius:12px;padding:14px 16px;font-weight:600;font-size:15px}
+.fstatus.ok{background:rgba(45,212,191,.12);border:1px solid rgba(45,212,191,.4);color:#99f6e4}
+.fstatus.no{background:rgba(248,113,113,.1);border:1px solid rgba(248,113,113,.4);color:#fecaca}
+@media (max-width:640px){.frow{grid-template-columns:1fr}.cform{padding:20px}.fact-row .btn{flex:1 1 100%}}
 /* contact */
 .contact{text-align:center}.contact .sub{margin-left:auto;margin-right:auto}
-.clist{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;max-width:1120px;margin:0 auto}
-.citem{display:flex;align-items:center;gap:12px;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;color:var(--tx);text-decoration:none;transition:.2s}
+.clist{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;max-width:1120px;margin:0 auto}
+.citem{flex:0 1 260px;display:flex;align-items:center;gap:12px;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;color:var(--tx);text-decoration:none;transition:.2s}
 .citem:hover{border-color:var(--teal)}.citem .ci{font-size:22px}.citem small{display:block;color:var(--mut);font-size:12px;font-weight:600}
 .citem span b{font-weight:700;font-size:15px;word-break:break-all}
 .citem.ph{border-style:dashed;border-color:var(--acc);opacity:.85}.citem.ph b{color:var(--acc)}

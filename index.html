@@ -29,7 +29,9 @@ window.CONFIG = {
   email:    "",      // e.g. "sergejs@example.lv"
   telegram: "",   // username without @, e.g. "sergejs_ai"
   getapro:  "https://getapro.lv/tradesman/catalogue/details/233176",
-  linkedin: ""
+  linkedin: "",
+  // Contact form (FormSubmit AJAX). First real submit sends an activation e-mail to this address.
+  formEndpoint: "https://formsubmit.co/ajax/sergejs.darbs@gmail.com"
 };
 </script>
 </head>
@@ -62,7 +64,7 @@ window.CONFIG = {
       <h1 data-i18n="hero.title"></h1>
       <p class="lead" data-i18n="hero.lead"></p>
       <div class="cta">
-        <a href="#contact" class="btn primary" data-i18n="hero.cta1"></a>
+        <a href="#form" class="btn primary" data-i18n="hero.cta1"></a>
         <a href="#services" class="btn ghost" data-i18n="hero.cta2"></a>
       </div>
       <ul class="ticks">
@@ -222,6 +224,20 @@ window.CONFIG = {
   <div class="wrap contact">
     <h2 data-i18n="ct.h"></h2>
     <p class="sub" data-i18n="ct.sub"></p>
+    <form class="cform" id="form" novalidate>
+      <div class="frow">
+        <label><span data-i18n="f.name"></span> <i>*</i><input name="name" type="text" autocomplete="name" required maxlength="120" data-i18n-ph="f.name.ph"></label>
+        <label><span data-i18n="f.email"></span> <i>*</i><input name="email" type="email" autocomplete="email" required maxlength="160" data-i18n-ph="f.email.ph"></label>
+      </div>
+      <label><span data-i18n="f.phone"></span><input name="phone" type="tel" autocomplete="tel" maxlength="40" data-i18n-ph="f.phone.ph"></label>
+      <label><span data-i18n="f.msg"></span> <i>*</i><textarea name="message" rows="5" required maxlength="5000" data-i18n-ph="f.msg.ph"></textarea></label>
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="fact-row">
+        <button type="submit" class="btn primary" id="fsend"><span data-i18n="f.send"></span></button>
+        <p class="fnote" data-i18n="f.note"></p>
+      </div>
+      <div class="fstatus" id="fstatus" role="status" aria-live="polite" hidden></div>
+    </form>
     <div class="clist" id="clist"></div>
   </div>
 </section>
