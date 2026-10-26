@@ -33,7 +33,8 @@ lv:{
 "so.2a":"Apmācīts uz jūsu cenām un FAQ","so.2b":"Pieteikumi uzreiz uz e-pastu / Telegram","so.2c":"LV / RU / EN",
 "so.3h":"Mājas lapa – vizītkarte","so.3p":"Ātra, moderna lapa ar pakalpojumiem, cenām un kontaktiem — kā šī.",
 "so.3a":"Pielāgota telefonam","so.3b":"Vairākas valodas","so.3c":"Pamata SEO un ātra ielāde",
-"gv.h":"Vizuāļi, video, grafika","gv.sub":"Darbu piemēri: reklāmas vizuāļi un dizaina sagatavošana drukai. Noklikšķiniet, lai palielinātu.",
+"gv.h":"Vizuāļi, video, grafika","gv.sub":"Darbu piemēri: reklāmas vizuāļi, AI video un dizaina sagatavošana drukai. Noklikšķiniet uz attēla, lai palielinātu.",
+"gv.vtag":"AI video","gv.vnote":"<b>AI video</b> — veidots ar mākslīgo intelektu, bez filmēšanas. Ievērojami ietaupa jūsu budžetu filmēšanai, aktieriem un lokācijai.","gv.v1":"Reklāma aprūpes pakalpojumiem — aprūpe mājās","gv.v2":"Reklāma aprūpes pakalpojumiem — pastaiga Jūrmalā","gv.vmeta":"Latviešu valodas balss · mūzika · 8 s · 4:5 (Meta)",
 "gv.adtag":"Reklāmas vizuāļa koncepts (Meta)","gv.ad1":"Meta reklāmas vizuāļi senioru aprūpes pakalpojumam — “Mamma ir drošībā”","gv.ad2":"Meta reklāmas vizuāļi senioru aprūpes pakalpojumam — aprūpe mājās","gv.ad3":"Meta reklāmas vizuāļi senioru aprūpes pakalpojumam — pastaiga Jūrmalā",
 "gv.invtag":"Druka · zelta folija · PDF/X-4","gv.inv1":"Ielūgums ar zelta foliju — sagatavošana drukai, PDF/X-4 (1. puse)","gv.inv2":"Ielūgums ar zelta foliju — sagatavošana drukai, PDF/X-4 (2. puse)",
 "gv.note":"Reklāmas vizuāļi ir koncepti; foto ģenerēti ar AI, teksti latviešu valodā. Ielūgumam sagatavoti atsevišķi slāņi: melnā krāsa (K) un folija (spot), 160×110 mm.",
@@ -78,7 +79,8 @@ ru:{
 "so.2a":"Обучен на ваших ценах и FAQ","so.2b":"Заявки сразу на e-mail / в Telegram","so.2c":"LV / RU / EN",
 "so.3h":"Сайт-визитка","so.3p":"Быстрый современный сайт с услугами, ценами и контактами — как этот.",
 "so.3a":"Адаптирован под телефон","so.3b":"Несколько языков","so.3c":"Базовое SEO и быстрая загрузка",
-"gv.h":"Визуалы, видео, графика","gv.sub":"Примеры работ: рекламные визуалы и подготовка дизайна к печати. Нажмите, чтобы увеличить.",
+"gv.h":"Визуалы, видео, графика","gv.sub":"Примеры работ: рекламные визуалы, ИИ-видео и подготовка дизайна к печати. Нажмите на изображение, чтобы увеличить.",
+"gv.vtag":"ИИ-видео","gv.vnote":"<b>ИИ-видео</b> — создано искусственным интеллектом, без съёмок. Существенно экономит ваши деньги на съёмку, актёров и локацию.","gv.v1":"Реклама услуг по уходу — уход на дому","gv.v2":"Реклама услуг по уходу — прогулка в Юрмале","gv.vmeta":"Голос на латышском · музыка · 8 с · 4:5 (Meta)",
 "gv.adtag":"Концепт рекламного визуала (Meta)","gv.ad1":"Рекламные визуалы Meta для услуги ухода за пожилыми — «Мама в безопасности»","gv.ad2":"Рекламные визуалы Meta для услуги ухода за пожилыми — уход на дому","gv.ad3":"Рекламные визуалы Meta для услуги ухода за пожилыми — прогулка в Юрмале",
 "gv.invtag":"Печать · золотая фольга · PDF/X-4","gv.inv1":"Приглашение с золотой фольгой — подготовка к печати, PDF/X-4 (сторона 1)","gv.inv2":"Приглашение с золотой фольгой — подготовка к печати, PDF/X-4 (сторона 2)",
 "gv.note":"Рекламные визуалы — концепты; фото сгенерированы ИИ, тексты на латышском. Для приглашения подготовлены отдельные слои: чёрный (K) и фольга (spot), 160×110 мм.",
@@ -123,7 +125,8 @@ en:{
 "so.2a":"Trained on your prices and FAQ","so.2b":"Leads straight to e-mail / Telegram","so.2c":"LV / RU / EN",
 "so.3h":"Business-card website","so.3p":"A fast, modern site with your services, prices and contacts — like this one.",
 "so.3a":"Mobile-friendly","so.3b":"Multilingual","so.3c":"Basic SEO and fast loading",
-"gv.h":"Visuals, video, graphics","gv.sub":"Work samples: ad visuals and print-ready design prep. Click to enlarge.",
+"gv.h":"Visuals, video, graphics","gv.sub":"Work samples: ad visuals, AI video and print-ready design prep. Click an image to enlarge.",
+"gv.vtag":"AI video","gv.vnote":"<b>AI video</b> — created with artificial intelligence, no film shoot needed. Saves you significant money on filming, actors and locations.","gv.v1":"Ad for elderly-care services — home care","gv.v2":"Ad for elderly-care services — a walk in Jūrmala","gv.vmeta":"Latvian voiceover · music · 8 s · 4:5 (Meta)",
 "gv.adtag":"Ad visual concept (Meta)","gv.ad1":"Meta ad visuals for an elderly-care service — “Mum is safe”","gv.ad2":"Meta ad visuals for an elderly-care service — home care","gv.ad3":"Meta ad visuals for an elderly-care service — a walk in Jūrmala",
 "gv.invtag":"Print · gold foil · PDF/X-4","gv.inv1":"Gold-foil invitation — print preparation, PDF/X-4 (side 1)","gv.inv2":"Gold-foil invitation — print preparation, PDF/X-4 (side 2)",
 "gv.note":"The ad visuals are concepts; photos are AI-generated, copy is in Latvian. The invitation was prepared with separate layers: black (K) and foil (spot), 160×110 mm.",
@@ -205,6 +208,15 @@ var lb=document.getElementById("lbx"),li=lb.querySelector("img"),lp=lb.querySele
 document.querySelectorAll("a.lb").forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();li.src=a.getAttribute("href");lp.textContent=T[lang][a.dataset.cap]||"";lb.hidden=false;});});
 function close(){lb.hidden=true;li.src="";}
 lb.addEventListener("click",close);document.addEventListener("keydown",function(e){if(e.key==="Escape")close();});
+// videos: poster + play button (keeps ad text visible), native controls after start, one at a time
+var vids=document.querySelectorAll(".gal video");
+vids.forEach(function(v){
+  var box=v.parentNode;v.removeAttribute("controls");
+  var b=document.createElement("button");b.type="button";b.className="vplay";b.setAttribute("aria-label","Play");b.innerHTML='<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>';
+  box.appendChild(b);
+  b.addEventListener("click",function(){v.controls=true;v.muted=false;box.classList.add("on");var p=v.play();if(p&&p.catch)p.catch(function(){});});
+  v.addEventListener("play",function(){box.classList.add("on");v.controls=true;vids.forEach(function(o){if(o!==v&&!o.paused)o.pause();});});
+});
 // reveal
 if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target);}})},{threshold:.08});
 document.querySelectorAll(".card,.steps li,.gal figure,.fact,.sec h2").forEach(function(e){e.classList.add("reveal");io.observe(e);});}

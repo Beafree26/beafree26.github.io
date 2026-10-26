@@ -83,6 +83,17 @@ h1 em{font-style:normal;color:var(--teal)}
 .gal a{display:block;overflow:hidden;background:#fff;cursor:zoom-in}
 .gal img{width:100%;height:auto;transition:transform .4s}.gal a:hover img{transform:scale(1.03)}
 .gal figcaption{padding:16px 18px;display:flex;flex-direction:column}.gal figcaption b{font-weight:600;font-size:15px}
+/* ai video */
+.vhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:8px 0 18px;padding:14px 18px;border:1px solid rgba(167,139,250,.3);background:rgba(167,139,250,.07);border-radius:var(--r)}
+.vhead .tag{margin:0}.vhead p{margin:0;flex:1 1 320px;color:var(--mut);font-size:15px}.vhead p b{color:var(--tx)}
+.tag.ai{color:#c4b5fd;background:rgba(167,139,250,.14)}
+.gal.vids{grid-template-columns:repeat(2,minmax(0,360px));justify-content:center}
+.vbox{position:relative;aspect-ratio:4/5;background:#0a1422;overflow:hidden}
+.vbox video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:#0a1422}
+.vplay{position:absolute;left:50%;top:38%;transform:translate(-50%,-50%);width:72px;height:72px;border-radius:50%;border:0;cursor:pointer;display:grid;place-items:center;color:#04121c;background:var(--teal);box-shadow:0 10px 30px rgba(0,0,0,.45),0 0 0 8px rgba(45,212,191,.22);transition:transform .2s}
+.vplay svg{margin-left:4px}.vplay:hover{transform:translate(-50%,-50%) scale(1.08)}.vplay:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.vbox.on .vplay{display:none}
+.gal figcaption small{color:var(--mut);font-size:13px;margin-top:6px}
 .lightbox{position:fixed;inset:0;z-index:100;background:rgba(4,10,18,.92);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
 .lightbox[hidden]{display:none}.lightbox img{max-width:min(1200px,96vw);max-height:84vh;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
 .lightbox p{color:var(--mut);margin:14px 0 0;text-align:center}
@@ -136,3 +147,5 @@ h1 em{font-style:normal;color:var(--teal)}
 .cform input,.cform textarea{font-size:16px;-webkit-appearance:none;appearance:none;max-width:100%;min-width:0}
 .frow>*{min-width:0}
 @media (max-width:640px){.cform{border-radius:16px;padding:18px 14px;margin-left:0;margin-right:0}.cform button{width:100%}}
+@media (max-width:640px){.gal.vids{grid-template-columns:1fr 1fr;justify-content:stretch}.vhead{padding:12px 14px}.vhead p{font-size:14px}}
+@media (max-width:420px){.gal.vids{grid-template-columns:1fr}}
