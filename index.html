@@ -263,6 +263,7 @@ window.CONFIG = {
     hit("visits");
     var l=document.documentElement.lang; if(/^(lv|ru|en)$/.test(l)) hit("lang-"+l);
     if(/fbclid=|utm_source=(fb|facebook|ig|instagram)/i.test(location.search)||/facebook\.|instagram\.|fb\.me/i.test(document.referrer)) hit("from-fb");
+    if(/utm_source=getapro/i.test(location.search)||/getapro\./i.test(document.referrer)) hit("from-getapro");
   }
 }catch(e){}})();
 </script>
