@@ -131,3 +131,8 @@ h1 em{font-style:normal;color:var(--teal)}
 .sec{padding:64px 0}.hero{padding:48px 0 60px}.wrap{padding:0 18px}.brand span:last-child{font-size:15px}.btn{flex:1;justify-content:center}.hero-card{padding:18px}}
 @media (max-width:420px){.btn{flex:1 1 100%}.gal.ads{grid-template-columns:1fr}.gal.ads figure:last-child{max-width:none}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}.reveal{opacity:1;transform:none}}
+/* mobile form fixes */
+.cform,.cform *{box-sizing:border-box}
+.cform input,.cform textarea{font-size:16px;-webkit-appearance:none;appearance:none;max-width:100%;min-width:0}
+.frow>*{min-width:0}
+@media (max-width:640px){.cform{border-radius:16px;padding:18px 14px;margin-left:0;margin-right:0}.cform button{width:100%}}
