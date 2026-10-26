@@ -1,6 +1,7 @@
 (function(){
 var T={
 lv:{
+"so.3alt":"Mūsu mājas lapas ekrānuzņēmums — AI studijas sākumlapa",
 "ab.fmt.p":"Attālināti visā Latvijā un ārzemēs. Bezmaksas konsultācija un prototips, rezultāts 24–48 h.",
 "ab.fmt":"Darba formāts",
 "ab.f.vis":"AI vizuāļi",
@@ -53,6 +54,7 @@ lv:{
 "c.phone":"Tālrunis","c.email":"E-pasts","c.tg":"Telegram","c.gp":"GetaPro profils","c.li":"LinkedIn","c.ph":"aizpildīt"
 },
 ru:{
+"so.3alt":"Скриншот нашего сайта — главная страница ИИ-студии",
 "ab.fmt.p":"Удалённо по всей Латвии и за рубежом. Бесплатная консультация и прототип, результат за 24–48 часов.",
 "ab.fmt":"Формат работы",
 "ab.f.vis":"ИИ-визуалы",
@@ -105,6 +107,7 @@ ru:{
 "c.phone":"Телефон","c.email":"E-mail","c.tg":"Telegram","c.gp":"Профиль GetaPro","c.li":"LinkedIn","c.ph":"заполнить"
 },
 en:{
+"so.3alt":"Screenshot of our website — the AI studio home page",
 "ab.fmt.p":"Remote across Latvia and abroad. Free consultation and prototype, results within 24–48 h.",
 "ab.fmt":"How we work together",
 "ab.f.vis":"AI visuals",
@@ -178,6 +181,8 @@ function set(l){
   if(!T[l]) l="lv"; lang=l; var t=T[l],u=U[l];
   document.documentElement.lang=l;
   document.querySelectorAll("[data-i18n]").forEach(function(e){var k=e.getAttribute("data-i18n"); if(t[k]!=null) e.innerHTML=t[k];});
+  document.querySelectorAll("[data-i18n-alt]").forEach(function(e){e.alt=t[e.getAttribute("data-i18n-alt")]||"";});
+  document.querySelectorAll("[data-shot]").forEach(function(a){var n="assets/"+a.dataset.shot+"_"+l;a.href=n+".webp";var s=a.querySelector("source"),i=a.querySelector("img");if(s)s.srcset=n+"_s.webp";if(i)i.src=n+"_s.jpg";});
   document.querySelectorAll("[data-i18n-ph]").forEach(function(e){e.placeholder=t[e.getAttribute("data-i18n-ph")]||"";});
   document.querySelectorAll(".cform .err").forEach(function(e){e.textContent=t[e.dataset.k]||"";});
   var fs=document.getElementById("fstatus"); if(fs&&!fs.hidden&&fs.dataset.k) fs.textContent=t[fs.dataset.k];
