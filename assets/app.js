@@ -1,6 +1,10 @@
 (function(){
 var T={
 lv:{
+"gv.vecnote":"<b>Vektorgrafika</b> — ielūgumu dizains vektoru formātā: asas līnijas jebkurā izmērā, faili sagatavoti drukai (PDF/X-4, 160×110 mm).",
+"gv.inv2alt":"Kāzu ielūguma dizains, vektorgrafika — 2. puse",
+"gv.inv1alt":"Kāzu ielūguma dizains, vektorgrafika — 1. puse",
+"gv.vectag":"Vektorgrafika",
 "so.3alt":"Mūsu mājas lapas ekrānuzņēmums — AI studijas sākumlapa",
 "ab.fmt.p":"Attālināti visā Latvijā un ārzemēs. Bezmaksas konsultācija un prototips, rezultāts 24–48 h.",
 "ab.fmt":"Darba formāts",
@@ -43,8 +47,8 @@ lv:{
 "gv.h":"Vizuāļi, video, grafika","gv.sub":"Darbu piemēri: reklāmas vizuāļi, AI video un dizaina sagatavošana drukai. Noklikšķiniet uz attēla, lai palielinātu.",
 "gv.vtag":"AI video","gv.vnote":"<b>AI video</b> — veidots ar mākslīgo intelektu, bez filmēšanas. Ievērojami ietaupa jūsu budžetu filmēšanai, aktieriem un lokācijai.","gv.v1":"Reklāma aprūpes pakalpojumiem — aprūpe mājās","gv.v2":"Reklāma aprūpes pakalpojumiem — pastaiga Jūrmalā","gv.vmeta":"Latviešu valodas balss · mūzika · 8 s · 4:5 (Meta)",
 "gv.adtag":"Reklāmas vizuāļa koncepts (Meta)","gv.ad1":"Meta reklāmas vizuāļi senioru aprūpes pakalpojumam — “Mamma ir drošībā”","gv.ad2":"Meta reklāmas vizuāļi senioru aprūpes pakalpojumam — aprūpe mājās","gv.ad3":"Meta reklāmas vizuāļi senioru aprūpes pakalpojumam — pastaiga Jūrmalā",
-"gv.invtag":"Druka · zelta folija · PDF/X-4","gv.inv1":"Ielūgums ar zelta foliju — sagatavošana drukai, PDF/X-4 (1. puse)","gv.inv2":"Ielūgums ar zelta foliju — sagatavošana drukai, PDF/X-4 (2. puse)",
-"gv.note":"Reklāmas vizuāļi ir koncepti; foto ģenerēti ar AI, teksti latviešu valodā. Ielūgumam sagatavoti atsevišķi slāņi: melnā krāsa (K) un folija (spot), 160×110 mm.",
+"gv.inv1":"Ielūgumu dizains — vektorgrafika (1. puse)","gv.inv2":"Ielūgumu dizains — vektorgrafika (2. puse)",
+"gv.note":"Reklāmas vizuāļi ir koncepti; foto ģenerēti ar AI, teksti latviešu valodā. Ielūgumu paraugos vārdi, datumi, adrese un QR kods aizstāti ar izdomātiem.",
 "ab.h":"Par studiju","ab.p1":"Esam neliela AI studija no Latvijas. Veidojam AI čatbotus, automatizāciju un mājas lapas, kas ietaupa laiku un palīdz neizlaist klientus.",
 "ab.p2":"Kā arī AI saturs reklāmai: video bez filmēšanas, balss ierunāšana un mūzika, reklāmas vizuāļi, teksti, dizains un maketi drukai, SEO un sociālie tīkli. Strādājam attālināti visā Latvijā un ārzemēs.",
 "ab.lang":"Valodas",
@@ -54,6 +58,10 @@ lv:{
 "c.phone":"Tālrunis","c.email":"E-pasts","c.tg":"Telegram","c.gp":"GetaPro profils","c.li":"LinkedIn","c.ph":"aizpildīt"
 },
 ru:{
+"gv.vecnote":"<b>Векторная графика</b> — дизайн приглашений в векторном формате: чёткие линии в любом размере, файлы подготовлены к печати (PDF/X-4, 160×110 мм).",
+"gv.inv2alt":"Дизайн свадебного приглашения, векторная графика — сторона 2",
+"gv.inv1alt":"Дизайн свадебного приглашения, векторная графика — сторона 1",
+"gv.vectag":"Векторная графика",
 "so.3alt":"Скриншот нашего сайта — главная страница ИИ-студии",
 "ab.fmt.p":"Удалённо по всей Латвии и за рубежом. Бесплатная консультация и прототип, результат за 24–48 часов.",
 "ab.fmt":"Формат работы",
@@ -96,8 +104,8 @@ ru:{
 "gv.h":"Визуалы, видео, графика","gv.sub":"Примеры работ: рекламные визуалы, ИИ-видео и подготовка дизайна к печати. Нажмите на изображение, чтобы увеличить.",
 "gv.vtag":"ИИ-видео","gv.vnote":"<b>ИИ-видео</b> — создано искусственным интеллектом, без съёмок. Существенно экономит ваши деньги на съёмку, актёров и локацию.","gv.v1":"Реклама услуг по уходу — уход на дому","gv.v2":"Реклама услуг по уходу — прогулка в Юрмале","gv.vmeta":"Голос на латышском · музыка · 8 с · 4:5 (Meta)",
 "gv.adtag":"Концепт рекламного визуала (Meta)","gv.ad1":"Рекламные визуалы Meta для услуги ухода за пожилыми — «Мама в безопасности»","gv.ad2":"Рекламные визуалы Meta для услуги ухода за пожилыми — уход на дому","gv.ad3":"Рекламные визуалы Meta для услуги ухода за пожилыми — прогулка в Юрмале",
-"gv.invtag":"Печать · золотая фольга · PDF/X-4","gv.inv1":"Приглашение с золотой фольгой — подготовка к печати, PDF/X-4 (сторона 1)","gv.inv2":"Приглашение с золотой фольгой — подготовка к печати, PDF/X-4 (сторона 2)",
-"gv.note":"Рекламные визуалы — концепты; фото сгенерированы ИИ, тексты на латышском. Для приглашения подготовлены отдельные слои: чёрный (K) и фольга (spot), 160×110 мм.",
+"gv.inv1":"Дизайн приглашений — векторная графика (сторона 1)","gv.inv2":"Дизайн приглашений — векторная графика (сторона 2)",
+"gv.note":"Рекламные визуалы — концепты; фото сгенерированы ИИ, тексты на латышском. В образцах приглашений имена, даты, адрес и QR-код заменены на вымышленные.",
 "ab.h":"О студии","ab.p1":"Мы — небольшая ИИ-студия из Латвии. Делаем ИИ-чат-ботов, автоматизацию и сайты, которые экономят время и помогают не терять клиентов.",
 "ab.p2":"А также ИИ-контент для рекламы: видео без съёмок, озвучка и музыка, рекламные визуалы, тексты, дизайн и макеты для печати, SEO и соцсети. Работаем удалённо по всей Латвии и за рубежом.",
 "ab.lang":"Языки",
@@ -107,6 +115,10 @@ ru:{
 "c.phone":"Телефон","c.email":"E-mail","c.tg":"Telegram","c.gp":"Профиль GetaPro","c.li":"LinkedIn","c.ph":"заполнить"
 },
 en:{
+"gv.vecnote":"<b>Vector graphics</b> — invitation design in vector format: crisp lines at any size, print-ready files (PDF/X-4, 160×110 mm).",
+"gv.inv2alt":"Wedding invitation design, vector graphics — side 2",
+"gv.inv1alt":"Wedding invitation design, vector graphics — side 1",
+"gv.vectag":"Vector graphics",
 "so.3alt":"Screenshot of our website — the AI studio home page",
 "ab.fmt.p":"Remote across Latvia and abroad. Free consultation and prototype, results within 24–48 h.",
 "ab.fmt":"How we work together",
@@ -149,8 +161,8 @@ en:{
 "gv.h":"Visuals, video, graphics","gv.sub":"Work samples: ad visuals, AI video and print-ready design prep. Click an image to enlarge.",
 "gv.vtag":"AI video","gv.vnote":"<b>AI video</b> — created with artificial intelligence, no film shoot needed. Saves you significant money on filming, actors and locations.","gv.v1":"Ad for elderly-care services — home care","gv.v2":"Ad for elderly-care services — a walk in Jūrmala","gv.vmeta":"Latvian voiceover · music · 8 s · 4:5 (Meta)",
 "gv.adtag":"Ad visual concept (Meta)","gv.ad1":"Meta ad visuals for an elderly-care service — “Mum is safe”","gv.ad2":"Meta ad visuals for an elderly-care service — home care","gv.ad3":"Meta ad visuals for an elderly-care service — a walk in Jūrmala",
-"gv.invtag":"Print · gold foil · PDF/X-4","gv.inv1":"Gold-foil invitation — print preparation, PDF/X-4 (side 1)","gv.inv2":"Gold-foil invitation — print preparation, PDF/X-4 (side 2)",
-"gv.note":"The ad visuals are concepts; photos are AI-generated, copy is in Latvian. The invitation was prepared with separate layers: black (K) and foil (spot), 160×110 mm.",
+"gv.inv1":"Invitation design — vector graphics (side 1)","gv.inv2":"Invitation design — vector graphics (side 2)",
+"gv.note":"The ad visuals are concepts; photos are AI-generated, copy is in Latvian. In the invitation samples, names, dates, address and QR code have been replaced with fictional ones.",
 "ab.h":"About the studio","ab.p1":"We're a small AI studio from Latvia. We build AI chatbots, automations and websites that save time and help you never miss a customer.",
 "ab.p2":"We also create AI content for ads: video without filming, voiceover and music, ad visuals, copywriting, design and print layouts, SEO and social media. We work remotely across Latvia and abroad.",
 "ab.lang":"Languages",
